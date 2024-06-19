@@ -61,9 +61,9 @@ btnF.addEventListener('click', () => {
 
 function refreshScenes() {
   for (let i = 1; i <= totalScenes ; i++) {
-    document.getElementById(`bg${i}`).style.filter = "none";
-    document.getElementById(`pia${i}`).classList.add('paused');
-    document.getElementById(`pia${i}b`).classList.add('paused');
+    // document.getElementById(`bg${i}`).style.filter = "none";
+    // document.getElementById(`pia${i}`).classList.add('paused');
+    // document.getElementById(`pia${i}b`).classList.add('paused');
   }
   document.getElementById(`scene${currentScene}`).style.display = "none";
   setTimeout(function() {
