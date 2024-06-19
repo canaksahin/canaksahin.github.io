@@ -17,6 +17,7 @@ let messages = ["Pia Pandora",
 
 let titles = ["CrossView 3D Portraits",
   "James Bond 007: Crossing Vue",
+  "Detective Pia Pandora had a gift for solving complex mysteries.",
   "As a child, she loved detective novels and solving tricky puzzles.",
   "At 22, she joined the police, quickly earning respect and trust.",
   "Gölge, her loyal Taiwan dog, was her constant companion.",
@@ -97,7 +98,7 @@ function refreshFooter() {
   document.getElementById('message-midbar').style.display = "none";
   document.getElementById('message-right').style.display = "none";
   document.getElementById('message-center').style.display = "block";
-  document.getElementById('message-center').innerHTML = `<p><strong><a href="http://www.piapandora.com" style="width: 1280px" id="message-center" class="footer-item">${messages[currentScene]}</a> © 2024</strong></p>`;
+  document.getElementById('message-center').innerHTML = `<span class="test"><strong><a href="http://www.piapandora.com" style="width: 1280px" id="message-center" class="footer-item">${messages[currentScene]}</a> © 2024</strong></span>`;
   } else {
   // document.getElementById('title-message').textContent = `The Art Knife Killer (${currentScene} of ${totalScenes})`;
   document.getElementById('title-message').textContent = `${titles[currentScene]}`;

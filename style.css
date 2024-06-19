@@ -36,14 +36,12 @@ h3 {
   text-shadow: 0px 0px 2px #FF7F00;
 }
 
-p {
+p, .test {
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #dddddd;
   font-style: normal;
   text-shadow: 0px 0px 2px #bbbbbb;
-
-  
 }
 
 .header-container {
@@ -74,7 +72,7 @@ button {
   color: #FFA500;
   height: 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   text-shadow: 0px 0px 2px #808080;
 }
@@ -268,7 +266,7 @@ button {
 
 .footer-item {
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #dddddd;
   font-style: normal;
   text-shadow: 0px 0px 2px #FF7F00;
