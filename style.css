@@ -298,7 +298,7 @@ button {
 
 @keyframes breathe {
   0% { transform: translateY(0) }
-  66% { transform: translateY(4px) }
+  66% { transform: translateY(3px) }
   100% { transform: translateY(0) }
 }
 
@@ -309,7 +309,7 @@ button {
 
 .pia {
   cursor: default;
-  animation: breathe ease-in-out 3s infinite;
+  animation: breathe ease-in-out 3.5s infinite;
 }
 
 @keyframes shadowFadeIn {
