@@ -16,7 +16,7 @@ let currentScene = 0;
 // ];
 
 let titles = ["CrossView 3D Portraits",
-  "James Bond 007: Crossing Vue",
+  "James Monde - Agent 77",
   "Detective Pia Pandora had a gift for solving complex mysteries.",
   "As a child, she loved detective novels and solving tricky puzzles.",
   "At 22, she joined the police, quickly earning respect and trust.",
@@ -29,7 +29,8 @@ let titles = ["CrossView 3D Portraits",
   "This evidence pointed to a reclusive artist with a dark past.",
   "Pia confronted the artist, uncovering his twisted motives.",
   "With the killer caught, the city finally breathed a sigh of relief.",
-  "Pia Depth Test"
+  "Lady Marian of Sherwood",
+  "Dove of Ukraine"
 ];
 
 refreshFooter();
@@ -150,10 +151,10 @@ function toggleFullscreen() {
 function toggleHideBars() {
   if (menu.style.opacity == 0) {
     menu.style.opacity = 1;
-    // colors.style.opacity = 1;
+    colors.style.opacity = 1;
   } else {
     menu.style.opacity = 0;
-    // colors.style.opacity = 0;
+    colors.style.opacity = 0;
   }
 }
 

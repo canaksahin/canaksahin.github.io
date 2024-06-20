@@ -298,7 +298,7 @@ button {
 
 @keyframes breathe {
   0% { transform: translateY(0) }
-  66% { transform: translateY(3px) }
+  66% { transform: translateY(4px) }
   100% { transform: translateY(0) }
 }
 
