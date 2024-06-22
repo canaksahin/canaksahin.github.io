@@ -17,20 +17,13 @@ let currentScene = 0;
 
 let titles = ["CrossView 3D Portraits",
   "James Mond - Agent 77",
-  // "Detective Pia Pandora had a gift for solving complex mysteries.",
-  // "As a child, she loved detective novels and solving tricky puzzles.",
-  // "At 22, she joined the police, quickly earning respect and trust.",
-  // "Gölge, her loyal Taiwan dog, was her constant companion.",
-  // "At 35, Pia faced her toughest case: the notorious Art Knife Killer.",
-  // "For years, the Art Knife Killer eluded the city's best detectives.",
-  // "One rainy night, Pia received a crucial anonymous tip.",
-  // "The tip led her to a long-abandoned warehouse by the docks.",
-  // "Inside, she and Gölge found vital evidence hidden in a secret room.",
-  // "This evidence pointed to a reclusive artist with a dark past.",
-  // "Pia confronted the artist, uncovering his twisted motives.",
-  // "With the killer caught, the city finally breathed a sigh of relief.",
-  "Lady Marian of Sherwood",
-  "Dove of Ukraine"
+  "Maid Marian of Sherwood",
+  "Dove of Ukraine",
+  "The Fisherman's Daughter",
+  "Lady Downton",
+  "The Fortune Teller",
+  "Princess Consuela",
+  "Icelandic Warrior"
 ];
 
 refreshFooter();
