@@ -23,7 +23,8 @@ let titles = ["CrossView 3D Portraits",
   "Lady Downton",
   "The Fortune Teller",
   "Princess Consuela",
-  "Icelandic Warrior"
+  "Icelandic Warrior",
+  "Pia's Run"
 ];
 
 refreshFooter();
