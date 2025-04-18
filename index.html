@@ -1,131 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="CrossView 3D Stories">
-  <meta name="keywords" content="CrossView, Stories, 3 Dimensional">
-  <meta name="author" content="Pia Pandora">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CrossView 3D Portraits</title>
-  <link rel="icon" type="image/png" href="icons/icons8-portrait-32.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Akşahin | Müzik Yolcusu</title>
+	<link rel="icon" type="image/png" href="misc/micro-logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+    <style>
+        body {
+			font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*justify-content: center;*/
+            height: 100vh;
+			background-color: #650000;
+            color: #1E2330;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+			margin-top: 40px;
+			margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile h1 {
+			font-family: "Libre Baskerville", serif;
+            margin: 0;
+            font-size: 24px;
+            color: #1E2330;
+        }
+		
+		.profile h3 {
+			font-family: 'Poppins', sans-serif;
+            margin: -3px 0 10px 0;
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .links a {
+		    display: block;
+            text-decoration: none;
+			background-color: #EECBBF;
+            color: #1E2330;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 18px;
+			font-style: bold;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+		    background-color: #800000;
+			color: #ffffff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #EECBBF;
+            color: white;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+		
+		@media (max-width: 768px) {
+			body {
+				flex-basis: 100%;
+			}
+			.container {
+				width: 70%;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% { opacity: 0 }
+			100% { opacity: 1 }
+		}
+
+		#fadeIn1, #fadeIn2, #fadeIn2b, #fadeIn2c, #fadeIn2d, #fadeIn2e, #fadeIn2f, #fadeIn3 {
+			opacity: 0;
+			transition: opacity ease-in-out;
+		}
+
+		#fadeIn1 {
+			animation: fadeIn 3s 0.3s forwards;
+		}
+		
+		#fadeIn2 {
+			animation: fadeIn 3s 1.3s forwards;
+		}
+		
+		#fadeIn2b {
+			animation: fadeIn 3s 1.6s forwards;
+		}
+		
+		#fadeIn2c {
+			animation: fadeIn 3s 1.9s forwards;
+		}
+		
+		#fadeIn2d {
+			animation: fadeIn 3s 2.2s forwards;
+		}
+		
+		#fadeIn2e {
+			animation: fadeIn 3s 2.5s forwards;
+		}		
+		
+		#fadeIn2f {
+			animation: fadeIn 3s 2.8s forwards;
+		}
+		
+		#fadeIn3 {
+			animation: fadeIn 3s 2.4s forwards;
+		}
+		
+    </style>
 </head>
-
-<body style="display: grid">
-
-<header class="menu-container" id="menu">
-  <img src="icons/icons8-home-32.png" class="menu-btn" id="btnQ">
-  <img src="icons/icons8-refresh-32.png" class="menu-btn" id="btnR">
-  <img src="icons/icons8-left-32.png" onclick="prevScene()" class="menu-btn">
-  <button id="title-message" style="width: 920px"></button>
-  <img src="icons/icons8-right-32.png" onclick="nextScene()" class="menu-btn">
-  <img src="icons/icons8-hide-32.png" class="menu-btn" id="btnE">
-  <img src="icons/icons8-fullscreen-32.png" class="menu-btn" id="btnF">
-</header>
-
-<main class="svg-container" id="svg">
-  <div id="scene0" class="header-container">
-    <h1 id="welcome" style="padding: 180px 0 0 0"><span id="fadeIn1">Welcome to</span> <span id="fadeIn2" style="color: #FFA500; text-shadow: 0px 0px 5px #FF7F00">CrossView</span></h1>
-    <h2 id="fadeIn3" style="padding: 0 0 200px 0"><span style="color: #FFA500; text-shadow: 0px 0px 4px #FF7F00">-</span> 3 Dimensional Portraits <span style="color: #FFA500; text-shadow: 0px 0px 4px #FF7F00">-</span></h2>
-  </div>
-
-  <div id="scene1" class="pia-container" style="display:none">
-    <img src="images/13bg.png" class="grayscale" style="height: 640px">
-    <img src="images/13pia.png" class="pia" style="height: 640px; position: absolute; left: 0">
-  </div>
-
-  <!-- <div id="scene2" class="pia-container" style="display:none">
-    <img src="images/01.png" style="height: 640px">
-  </div>
-
-  <div id="scene3" class="pia-container" style="display:none">
-    <img src="images/02.png" style="height: 640px">
-  </div>
-
-  <div id="scene4" class="pia-container" style="display:none">
-    <img src="images/03.png" style="height: 640px">
-  </div>
-  
-  <div id="scene5" class="pia-container" style="display:none">
-    <img src="images/04.png" style="height: 640px">
-  </div>
-
-  <div id="scene6" class="pia-container" style="display:none">
-    <img src="images/05.png" style="height: 640px">
-  </div>
-
-  <div id="scene7" class="pia-container" style="display:none">
-    <img src="images/06.png" style="height: 640px">
-  </div>
-
-  <div id="scene8" class="pia-container" style="display:none">
-    <img src="images/07.png" style="height: 640px">
-  </div>
-
-  <div id="scene9" class="pia-container" style="display:none">
-    <img src="images/08.png" style="height: 640px">
-  </div>
-
-  <div id="scene10" class="pia-container" style="display:none">
-    <img src="images/09.png" style="height: 640px">
-  </div>
-
-  <div id="scene11" class="pia-container" style="display:none">
-    <img src="images/10.png" style="height: 640px">
-  </div>
-
-  <div id="scene12" class="pia-container" style="display:none">
-    <img src="images/11.png" style="height: 640px">
-  </div>
-
-  <div id="scene13" class="pia-container" style="display:none">
-    <img src="images/12.png" style="height: 640px">
-  </div> -->
-
-  <div id="scene2" class="pia-container" style="display:none">
-    <img src="images/14bg.png" class="" style="height: 640px">
-    <img src="images/14pia.png" class="pia" style="height: 640px; position: absolute; left: 0">
-  </div>
-
-  <div id="scene3" class="pia-container" style="display:none">
-    <img src="images/15bg.png" class="" style="height: 640px">
-    <img src="images/15pia.png" class="pia" style="height: 640px; position: absolute; left: 0">
-  </div>
-
-  <div id="scene4" class="pia-container" style="display:none">
-    <img src="images/191_SBS_cross_eyed.jpg" class="" style="height: 640px">
-  </div>
-
-  <div id="scene5" class="pia-container" style="display:none">
-    <img src="images/127_SBS_cross_eyed.jpg" class="" style="height: 640px">
-  </div>
-
-  <div id="scene6" class="pia-container" style="display:none">
-    <img src="images/105_SBS_cross_eyed.jpg" class="" style="height: 640px">
-  </div>
-
-  <div id="scene7" class="pia-container" style="display:none">
-    <img src="images/108_SBS_cross_eyed.jpg" class="" style="height: 640px">
-  </div>
-
-  <div id="scene8" class="pia-container" style="display:none">
-    <img src="images/41_SBS_cross_eyed.jpg" class="" style="height: 640px">
-  </div>
-
-  <div id="scene9" class="pia-container" style="display:none">
-    <img src="images/pias3dtest.png" class="" style="height: 640px">
-  </div>
-</main>
-
-<footer class="message-container" id="colors">
-  <button style="width: 1280px" id="message-center" class="footer-message"></button>
-  <button style="width: 640px" id="message-left" class="footer-message"></button>
-  <button style="width: 80px" id="message-midbar" class="footer-message"></button>
-  <button style="width: 640px" id="message-right" class="footer-message"></button>
-</footer>
-
-<script src="script.js"></script>
-
+<body>
+    <div class="container">
+        <div class="profile" id="fadeIn1">
+            <img src="misc/mini-logo.jpg" alt="Profile Picture">
+            <h1>Can Akşahin</h1>
+            <h3><i>Müzik Yolcusu</i></h3>
+			
+        </div>
+        <div class="links">
+            <a href="https://www.youtube.com/playlist?list=PLwMJHxVdumQQ1sveTNrntp8M2hO9FGmUB" target="_blank" id="fadeIn2">Müzik Yolculuğu</a>
+            <a href="https://piapandora.com" target="_blank" id="fadeIn2b">Pia Pandora Games & Apps</a>
+        </div>
+        <div class="social-icons" id="fadeIn3">
+            <a href="https://www.youtube.com/beyazkus1" target="_blank" aria-label="YouTube"><img src="misc/icons8-youtube-logo-50.png" height="25px" width="25px" alt="YouTube Logo"></a>
+            <a href="https://www.facebook.com/canaksahin82" target="_blank" aria-label="Facebook"><img src="misc/icons8-facebook-logo-50.png" height="25px" width="25px" alt="Facebook Logo"></a>
+            <a href="mailto:canaksahin@hotmail.com" target="_blank" aria-label="Mail"><img src="misc/icons8-mail-64.png" height="25px" width="25px" alt="Mail Logo"></a>
+        </div>
+        <footer id="fadeIn3">
+            <a href="http://www.canaksahin.com" target="_blank" aria-label="Author" style="text-decoration: none; color: #1E2330"><b>Can Akşahin</b></a><b> &copy; 2024</b>
+        </footer>
+    </div>
 </body>
 </html>
